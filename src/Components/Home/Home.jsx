@@ -1,7 +1,5 @@
 import post from "../../assets/post_1.jpg";
-import post7 from "../../assets/post_7.jpg";
-import post8 from "../../assets/post_8.jpg";
-import post9 from "../../assets/post_9.jpg";
+import RecentPost from "../Post/RecentPost";
 const Home = () => {
   return (
     <>
@@ -23,42 +21,7 @@ const Home = () => {
               </a>
             </div>
             <div className="recentPost">
-              <div className="flex justify-between items-center gap-2 py-4">
-                <div className="w-full max-w-36">
-                  <img src={post7} alt="" className=" w-full h-full object-cover" />
-                </div>
-                <div>
-                  <span className="bg-red-600 text-white px-4 font-inter text-base py-1">Food</span>
-                  <h3 className="text-lg font-medium font-inter py-4">
-                    Crispy Air Fryer Parmesan And Thyme Roasted Wedge Fries
-                  </h3>
-                  <h4 className="text-base font-normal font-inter">ByXu Jianhong</h4>
-                </div>
-              </div>
-              <div className="flex justify-between items-center gap-2 py-4">
-                <div className="w-full max-w-36">
-                  <img src={post8} alt="" className=" w-full h-full object-cover" />
-                </div>
-                <div>
-                  <span className="bg-red-600 text-white px-4 font-inter text-base py-1">Food</span>
-                  <h3 className="text-lg font-medium font-inter py-4">
-                    Crispy Air Fryer Parmesan And Thyme Roasted Wedge Fries
-                  </h3>
-                  <h4 className="text-base font-normal font-inter">ByXu Jianhong</h4>
-                </div>
-              </div>
-              <div className="flex justify-between items-center gap-2 py-4">
-                <div className="w-full max-w-36">
-                  <img src={post9} alt="" className=" w-full h-full object-cover" />
-                </div>
-                <div>
-                  <span className="bg-red-600 text-white px-4 font-inter text-base py-1">Food</span>
-                  <h3 className="text-lg font-medium font-inter py-4">
-                    Crispy Air Fryer Parmesan And Thyme Roasted Wedge Fries
-                  </h3>
-                  <h4 className="text-base font-normal font-inter">ByXu Jianhong</h4>
-                </div>
-              </div>
+              <RecentPost />
             </div>
           </div>
         </div>
